@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nectar Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- PDF.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <h1>THE NECTAR</h1>
+  <p>Multicuisine Restaurant</p>
+</div>
+
+<!-- NAVBAR (same everywhere) -->
+<nav class="nav-bar">
+  <ul>
+    <li><a href="restro.html">Home</a></li>
+    <li>|</li>
+    <li><a href="ourstory.html">Our Story</a></li>
+    <li>|</li>
+    <li><a href="menu.html">Menu</a></li>
+    <li>|</li>
+    <li><a href="#">Gallery</a></li>
+  </ul>
+</nav>
+
+<section class="zigzag-section">
+
+  <!-- ROW 1 -->
+   
+  <div class="zigzag-row">
+    <div class="zigzag-item image">
+<img src="menu/breakfast.png" alt="Dish"
+         onclick="openMenu('menu/breakfast.png')">
+
+
+    </div>
+    
+    <div class="zigzag-item image">
+   <img src="OIP.webp" alt="Dish Image">
+   
+</div>
+    <div class="zigzag-item image">
+    <img src="menu/all time fav.png" alt="Dish"
+         onclick="openMenu('menu/all time fav.png')">
+  </div>
+
+  <div class="zigzag-item image">
+   <img src="OIP.webp" alt="Dish Image">
+</div>
+
+
+
+    <div class="zigzag-item image">
+
+<img src="menu/all time fav.png" alt="Dish"
+onclick="openMenu('menu/appetizer.png')">
+    </div>
+     <div class="zigzag-item image">
+  <img src="OIP.webp" alt="Dish Image">
+</div>
+
+  
+
+  <div class="zigzag-item image">
+      <img src="menu/oriental and thai mains.png" alt="Dish"
+      onclick="openMenu('menu/oriental and thai mains.png')">
+    </div>
+
+
+  
+    <div class="zigzag-item image">
+   <img src="OIP.webp" alt="Dish Image">
+</div>
+     
+
+  <div class="zigzag-item image">
+      <img src="menu/oriental and thai mains.png" alt="Dish"
+      onclick="openMenu('menu/western mains.png')">
+    </div></div>
+
+
+    
+    <div class="zigzag-item menu">
+      <h3>Main Course</h3>
+      <p>Butter Naan · Biryani · Kadai Paneer</p>
+    </div>
+  
+
+  <section class="zigzag-row">
+  <!-- IMAGE -->
+  <div class="zigzag-item image">
+    <img src="menu/indianmains.png"
+         alt="Breakfast Menu"
+         onclick="openMenu('menu/indianmains.png')">
+  </div>
+
+  <div class="zigzag-item image">
+   <img src="OIP.webp" alt="Dish Image">
+</div>
+
+ <div class="zigzag-item image">
+    <img src="menu/indianmainsveg.png"
+         alt="Breakfast Menu"
+         onclick="openMenu('menu/indianmainsveg.png')">
+  </div>
+
+</section>
+<section class="zigzag-row">
+  <!-- IMAGE -->
+  <div class="zigzag-item image">
+    <img src="menu/soupndsalad.png"
+         alt="Breakfast Menu"
+         onclick="openMenu('menu/soupndsalad.png')">
+  </div>
+
+  <div class="zigzag-item image">
+   <img src="OIP.webp" alt="Dish Image">
+</div>
+
+ <div class="zigzag-item image">
+    <img src="menu/beverage.png"
+         alt="Breakfast Menu"
+         onclick="openMenu('menu/beverage.png')">
+  </div>
+
+</section>
+<!-- MENU POPUP MODAL -->
+<div id="menuModal" class="menu-modal">
+  <span class="close-btn" onclick="closeMenu()">×</span>
+  <img id="menuModalImg" src="">
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
